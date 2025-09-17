@@ -23,6 +23,8 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.1",
-    "react-textarea-autosize": "^8.5.9"
+    "react-textarea-autosize": "^8.5.9",
+    "openai": "^4.0.0",
+    "@vercel/node": "^3.0.0"
   }
 }
