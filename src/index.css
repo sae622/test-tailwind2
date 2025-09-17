@@ -1,0 +1,24 @@
+/* 全体のテーマ対応 */
+html.dark {
+  background-color: #1f2937; /* グレー900相当 */
+  color: #f9fafb;           /* グレー50相当 */
+}
+
+/* 共通ボタン */
+button {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* ダーク時のボタン・フォーム */
+html.dark button {
+  background-color: #374151; /* グレー700 */
+  color: #f9fafb;
+}
+
+html.dark select,
+html.dark input,
+html.dark textarea {
+  background-color: #374151;
+  color: #f9fafb;
+  border-color: #4b5563;
+}

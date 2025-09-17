@@ -1,0 +1,23 @@
+{
+  "name": "test-tailwind2",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "3.4.13",
+    "vite": "^5.3.3"
+  },
+  "dependencies": {
+    "docx": "^9.5.1",
+    "file-saver": "^2.0.5",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.1",
+    "react-textarea-autosize": "^8.5.9"
+  }
+}
