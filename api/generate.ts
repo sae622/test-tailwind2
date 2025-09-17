@@ -23,11 +23,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       max_tokens: 300,
     });
 
-    // ✅ 安全にアクセス（undefined回避）
-    let text = "テキスト生成に失敗しました。";
-    if (completion.choices && completion.choices.length > 0) {
-      text = completion.choices[0].message?.content ?? text;
-    }
+    // ✅ TypeScriptに「必ずある」と保証させる
+    const choice = completion.choices && completion.choices.length > 0
+      ? completion.choices[0]
+      : null;
+
+    const text =
+      choice && choice.message && choice.message.content
+        ? choice.message.content
+        : "テキスト生成に失敗しました。";
 
     res.status(200).json({ text });
   } catch (error) {
